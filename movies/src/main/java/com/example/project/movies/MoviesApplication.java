@@ -14,11 +14,10 @@ public class MoviesApplication {
 	}
 
 	@GetMapping("/")
-	public String apiRoot(){
-		String link="<p><a href='/homepage'>The address</a></p>";
-		return "Hello, World \n"+link;
+	public String homepage(){
+		return "<p><a href='homepage.html'>click here to enter the page</a></p>";
 	}
-	@GetMapping("/homepage")
+	@GetMapping("/newMessage")
 	public String homePageMessage(){
 		return "This is the homepage that you just went onto";
 	}
